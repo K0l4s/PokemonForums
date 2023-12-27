@@ -1,14 +1,14 @@
 import React from 'react'
-import { BrowserRouter, Route } from 'react-router-dom'
-import home from '../home/home'
+import { Route, Routes } from 'react-router-dom'
+import HomePage from '../homepage/HomePage'
 
-const Router = () => {
+type Props = {}
+
+const Router = (props: Props) => {
   return (
-    <div>
-        <BrowserRouter>
-            <Route path="/" component={<home/>}/>
-        </BrowserRouter>
-    </div>
+    <Routes>
+			<Route path="/" element={<HomePage />} />
+    </Routes>
   )
 }
 
