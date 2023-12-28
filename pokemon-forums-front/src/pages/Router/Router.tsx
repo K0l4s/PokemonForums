@@ -8,7 +8,7 @@ type Props = {}
 const Router = (props: Props) => {
   return (
     <Routes>
-			<Route path="" element={<HomePage />} />
+			<Route path="/" element={<HomePage />}/>
     </Routes>
   )
 }
