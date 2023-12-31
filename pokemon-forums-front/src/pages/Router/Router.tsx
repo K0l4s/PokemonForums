@@ -8,6 +8,9 @@ import Navbar from '../../components/Navbar/Navbar'
 import Login from '../Login/Login'
 import NotFound from '../NotFound/NotFound'
 import Register from '../Register/Register'
+import Footer from '../../components/Footer/Footer'
+import Blog from '../Blog/Blog'
+import Pokedex from '../Pokedex/Pokedex'
 
 type Props = {}
 
@@ -31,8 +34,11 @@ const Router = (props: Props) => {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="about" element={<AboutUs />} />
+              <Route path="blog" element={<Blog />} />
+              <Route path="pokedex" element={<Pokedex />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
+            <Footer/>
           </div>
         </div>
       }
