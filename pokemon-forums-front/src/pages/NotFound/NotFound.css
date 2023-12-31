@@ -1,0 +1,71 @@
+.notfound .background img{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.notfound .background .blur{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: #00000065;
+    backdrop-filter: blur(20px);
+}
+
+.notfound h1{
+    position: fixed;
+    z-index: 1;
+    color: white;
+    font-size: 5rem;
+    font-family: fantasy;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.notfound p{
+    position: fixed;
+    z-index: 1;
+    color: white;
+    font-size: 1.5rem;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.notfound button{
+    position: fixed;
+    z-index: 1;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    top: 75%;
+    left: 50%;
+    border-radius: 50px;
+    transform: translate(-50%, -50%);
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    padding: 10px;
+
+}
+.notfound .rotom{
+    position: fixed;
+    z-index: 0;
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    animation: rotom 10s linear infinite;
+}
+
+@keyframes rotom{
+    0%{
+        transform: translateX(100);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100);
+    }
+}
