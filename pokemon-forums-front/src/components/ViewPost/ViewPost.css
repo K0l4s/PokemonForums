@@ -69,6 +69,8 @@
 .ViewPost .BottomContent img {
     width: 500px;
     height: 500px;
+    object-fit: cover;
+    object-position: center;
     border-radius: 50%;
     padding: 10px;
 }

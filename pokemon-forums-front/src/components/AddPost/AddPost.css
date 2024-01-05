@@ -21,6 +21,8 @@
 .AddPost .TopAdd img {
     width: 42px;
     height: 42px;
+    object-fit: cover;
+    object-position: center;
     border-radius: 50%;
     padding: 10px;
 }
@@ -38,7 +40,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: justify;
-    
+
 }
 
 .BottomAdd {
