@@ -11,6 +11,9 @@ import Register from '../Register/Register'
 import Footer from '../../components/Footer/Footer'
 import Blog from '../Blog/Blog'
 import Pokedex from '../Pokedex/Pokedex'
+import PokemonDetail from '../PokemonDetail/PokemonDetail'
+import Youtube from '../Youtube/Youtube'
+import Notification from '../../components/Notification/Notification'
 
 type Props = {}
 
@@ -19,6 +22,7 @@ const Router = (props: Props) => {
   const { pathname } = useLocation();
   return (
     <div className='router'>
+      <Notification/>
       {pathname === "/login" || pathname === "/register" ?
         <div>
           <Routes>
@@ -36,6 +40,8 @@ const Router = (props: Props) => {
               <Route path="about" element={<AboutUs />} />
               <Route path="blog" element={<Blog />} />
               <Route path="pokedex" element={<Pokedex />} />
+              <Route path="pokemon/:id" element={<PokemonDetail />} />
+              <Route path='youtube' element ={<Youtube/>}/>
               <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer/>
