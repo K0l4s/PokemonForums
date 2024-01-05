@@ -5,7 +5,7 @@ type Props = {}
 const Blog = (props: Props) => {
   return (
     <div>
-        <h1> Xin chào </h1>
+        <h1> Tính năng đang phát triển, vui lòng quay trở lại sau! </h1>
     </div>
   )
 }

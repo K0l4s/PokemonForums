@@ -14,6 +14,7 @@ import Pokedex from '../Pokedex/Pokedex'
 import PokemonDetail from '../PokemonDetail/PokemonDetail'
 import Youtube from '../Youtube/Youtube'
 import Notification from '../../components/Notification/Notification'
+import Event from '../Event/Event'
 
 type Props = {}
 
@@ -42,6 +43,7 @@ const Router = (props: Props) => {
               <Route path="pokedex" element={<Pokedex />} />
               <Route path="pokemon/:id" element={<PokemonDetail />} />
               <Route path='youtube' element ={<Youtube/>}/>
+              <Route path='event' element ={<Event/>}/>
               <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer/>

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import { FaFacebook } from 'react-icons/fa'
+import { FaFacebook, FaTiktok } from 'react-icons/fa'
 import { ImYoutube2 } from 'react-icons/im'
 type Props = {}
 
@@ -13,6 +13,8 @@ const Footer = (props: Props) => {
       <div className="socialLink">
         <a href='https://www.facebook.com/pokedexvina'><FaFacebook color='blue' size={50} /></a>
         <a href='https://youtube.com/@pokedexvina'><ImYoutube2 color='red' size={50} /></a>
+        {/* Tiktok */}
+        <a href='https://www.tiktok.com/@pokedexvina'><FaTiktok color='white' size={50} /></a>
       </div>
     </div>
   )

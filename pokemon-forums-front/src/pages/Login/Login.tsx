@@ -8,6 +8,7 @@ type Props = {}
 
 const Login = (props: Props) => {
     const navigate = useNavigate();
+
     return (
         <div className='login'>
             <div className="blur"></div>

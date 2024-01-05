@@ -13,6 +13,7 @@
     padding: 5px;
     border-radius: 10px;
     line-height: 0;
+    animation: right_to_left 5s ease-in-out forwards;
 }
 
 .notification .closeButton{
@@ -33,4 +34,13 @@
     font-weight: bold;
     color: #000000;
     text-align: center;
+}
+
+@keyframes right_to_left{
+    from{
+        right: -100%;
+    }
+    to{
+        right: 10px;
+    }
 }
