@@ -1,0 +1,58 @@
+.AddPost {
+    width: 600px;
+    height: auto;
+    border: 2px solid #000;
+    border-radius: 20px;
+    margin: 20px 230px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.AddPost .TopAdd {
+    display: flex;
+    flex-direction: row;
+    align-items: center  ;
+    margin-bottom: -10px;
+}
+
+.AddPost .TopAdd img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.AddPost .TopAdd textarea {
+    width: 81%;
+    height: auto;
+    padding: 5px;
+    border: 0;
+    outline: none;
+    background: #efefef;
+    border-radius: 30px;
+    font-size: 17px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    
+}
+
+.BottomAdd {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    bottom: -23px;
+}
+
+.AddPost .BottomAdd button {
+    margin: 8px;
+    padding: 5px;
+    border-radius: 30px;
+    width: 150px;
+}

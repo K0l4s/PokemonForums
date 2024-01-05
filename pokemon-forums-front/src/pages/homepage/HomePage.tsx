@@ -8,8 +8,7 @@ interface Props {}
 
 function HomePage({}: Props) {
   return (
-    <div>HomePage
-      <FcAssistant />
+    <div className='HomePage'>
       <AddPost></AddPost>
       <ViewPost></ViewPost>
     </div>

@@ -1,0 +1,75 @@
+.ViewPost {
+    width: 600px;
+    height: auto;
+    border: 2px solid #000;
+    border-radius: 20px;
+    margin: 20px 230px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.ViewPost .PostAdd {
+    display: flex;
+    flex-direction: row;
+}
+
+.ViewPost .PostAdd img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.ViewPost .PostAdd .TextP {
+    line-height: 0;
+}
+
+.ViewPost .PostAdd .TextP .TextP1 {
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ViewPost .PostAdd .TextP .TextP2 {
+    font-size: 15px;
+}
+
+.BottomView {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    bottom: -23px;
+}
+
+.ViewPost .BottomView button {
+    margin: 8px;
+    padding: 5px;
+    border-radius: 30px;
+    width: 150px;
+}
+
+.ViewPost .BottomContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -10px;
+}
+
+.ViewPost .BottomContent p {
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.ViewPost .BottomContent img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
