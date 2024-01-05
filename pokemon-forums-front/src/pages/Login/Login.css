@@ -1,0 +1,158 @@
+.login {
+    /* Căn giữa màn hình */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    /* Chỉnh màu nền */
+    background: #000000;
+    color: white;
+}
+
+.login .blur {
+    /* Chỉnh kích thước */
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #00000065;
+    z-index: 1;
+    backdrop-filter: blur(20px);
+}
+.login h1{
+    z-index: 15;
+}
+.login .wallpaper{
+    position: fixed;
+    height: 1000px;
+    width: 1000px;
+    top: 0;
+    left: 0;;
+    z-index: 0;
+    
+
+}
+.login .loginBox {
+    z-index: 15;
+    /* Căn giữa màn hình */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Chỉnh kích thước */
+    width: 400px;
+    height: auto;
+    /* Chỉnh màu nền */
+    background: rgb(255, 255, 255);
+    /* Bo tròn viền */
+    border-radius: 10px;
+    /* Đổ bóng */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: black;
+    padding: 30px;
+    /* Chuyển động top to center mượt */
+    animation: top_to_center 0.5s ease-in-out;
+}
+
+@keyframes top_to_center {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+    
+}
+
+.login .loginBox .textAndInput p {
+    /* Chỉnh kích thước */
+    font-size: 1rem;
+    /* Chỉnh khoảng cách */
+    padding: 0;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.login .loginBox .textAndInput input {
+    text-align: center;
+    /* Chỉnh kích thước */
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    /* Chỉnh độ bo tròn */
+    border-radius: 100px;
+    /* Chỉnh độ dày viền */
+    border: none;
+    background: rgb(24, 5, 5);
+    color: white;
+}
+
+.login .loginBox .loginButton button{
+    /* Chỉnh kích thước */
+    width: 310px;
+    height: 50px;
+    /* Chỉnh khoảng cách */
+    margin: 20px;
+    /* Chỉnh khoảng cách */
+    padding: 10px;
+    /* Chỉnh độ bo tròn */
+    border-radius: 100px;
+    /* Chỉnh độ dày viền */
+    border: none;
+    background: rgb(24, 5, 5);
+    color: white;
+    cursor: pointer;
+}
+
+.login .loginBox .loginButton button:hover{
+    background: rgb(24, 5, 5, 0.8);
+}
+
+.login .loginBox .anotherAuth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login .loginBox .anotherAuth button{
+    /* Chỉnh kích thước */
+    width: 310px;
+    height: 50px;
+    /* Chỉnh khoảng cách */
+    padding: 10px;
+    /* Chỉnh độ bo tròn */
+    border-radius: 100px;
+    /* Chỉnh độ dày viền */
+    border: none;
+    /* Chỉnh khoảng cách */
+    margin-bottom: 10px;
+    background: rgb(24, 5, 5);
+    color: white;
+    cursor: pointer;
+}
+.login .loginBox .anotherAuth button:nth-child(1){
+    background: rgb(25, 62, 184);
+}
+.login .loginBox .anotherAuth button:nth-child(1):hover{
+    background: rgb(25, 62, 184, 0.8);
+}
+.login .loginBox .anotherAuth button:nth-child(2){
+    background: rgb(184, 62, 25);
+}
+.login .loginBox .anotherAuth button:nth-child(2):hover{
+    background: rgb(184, 62, 25, 0.8);
+}
+.login .loginBox .socialLink{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.login .loginBox .socialLink a{
+    color: white;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-right: 15px;
+}
