@@ -6,7 +6,7 @@ interface Props {}
 
 function HomePage({}: Props) {
   return (
-    <div>HomePage
+    <div className='HomePage'>
       <AddPost></AddPost>
       <ViewPost></ViewPost>
     </div>
